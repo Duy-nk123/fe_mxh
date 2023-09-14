@@ -17,7 +17,7 @@ import SpecificIdeaModal from "../../public/modals/SpecificIdeaModal"
 import { apiUrl, PROFILE_INFORMATION, ACCESS_TOKEN } from '../../../constants/constants'
 import formatTime from "../../../utilities/formatTime"
 
-const socket = io('https://server-enterprise.onrender.com', { transports: ['websocket'] })
+const socket = io('https://firstgroup.onrender.com', { transports: ['websocket'] })
 
 function Homepage() {
     const navigate = useNavigate()
@@ -203,6 +203,7 @@ function Homepage() {
                 formData.append('CategoryId', createIdeaForm.CategoryId)
                 formData.append('Anonymous', isAnonymous)
                 formData.append('AcademicYear', createIdeaForm.AcademicYear)
+                console.log(createIdeaForm.AcademicYear)
                 console.log(formData.getAll('documents'))
                 const response = await axios.post(`${apiUrl}/idea/createIdea`, formData, {
                     headers: {

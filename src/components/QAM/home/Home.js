@@ -12,7 +12,7 @@ import BarChart2 from "../chart/BarChart2"
 import axios from "axios"
 import { apiUrl, ACCESS_TOKEN } from "../../../constants/constants"
 
-const socket = io('https://server-enterprise.onrender.com', { transports: ['websocket'] })
+const socket = io('https://firstgroup.onrender.com', { transports: ['websocket'] })
 function Home() {
   const accessToken = localStorage.getItem(ACCESS_TOKEN)
   const navigate = useNavigate()

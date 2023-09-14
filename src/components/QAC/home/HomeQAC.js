@@ -10,7 +10,7 @@ import { PROFILE_INFORMATION, apiUrl, ACCESS_TOKEN } from "../../../constants/co
 import { useEffect } from "react";
 import { useState } from "react";
 
-const socket = io('https://server-enterprise.onrender.com', { transports: ['websocket'] })
+const socket = io('https://firstgroup.onrender.com', { transports: ['websocket'] })
 function HomeQAC() {
   const accessToken = localStorage.getItem(ACCESS_TOKEN)
   const navigate = useNavigate()

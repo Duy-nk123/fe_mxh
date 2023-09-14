@@ -16,7 +16,7 @@ import {
 } from "../../../constants/constants";
 
 Modal.setAppElement("#root")
-const socket = io("https://server-enterprise.onrender.com", {
+const socket = io("https://firstgroup.onrender.com", {
   transports: ["websocket"],
 })
 
